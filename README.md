@@ -1,2 +1,2 @@
 # DesignPatternsCSharp
-Implementação de Padrões de Projeto seguindo o ebook Daily Design Patterns do Matthew P Jones
+Design Patterns implementation in C# following the ebook "The Daily Design Pattern" by Matthew P Jones

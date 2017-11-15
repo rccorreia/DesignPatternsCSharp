@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PadrõesDeProjeto.PadrõesCriacionais.FactoryMethod
+namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 {
     public abstract class Sanduíche
     {

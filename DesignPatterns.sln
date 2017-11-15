@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PadrõesDeProjeto", "PadrõesDeProjeto\PadrõesDeProjeto.csproj", "{AFDF1185-A3DD-414A-80C2-11F713A7AE7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternsCSharp", "DesignPatternsCSharp\DesignPatternsCSharp.csproj", "{AFDF1185-A3DD-414A-80C2-11F713A7AE7D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PadrõesDeProjetoTestesUnitários", "PadrõesDeProjetoTestesUnitários\PadrõesDeProjetoTestesUnitários.csproj", "{CA4D866C-DA01-4B84-8B8B-0F0AD5269C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternsCSharp.UnitTest", "DesignPatternsCSharp.UnitTest\DesignPatternsCSharp.UnitTest.csproj", "{CA4D866C-DA01-4B84-8B8B-0F0AD5269C4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

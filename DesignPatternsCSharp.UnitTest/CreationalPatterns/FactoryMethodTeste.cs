@@ -1,9 +1,9 @@
+using DesignPatternsCSharp.CreationalPatterns.FactoryMethod;
 using FluentAssertions;
-using PadrõesDeProjeto.PadrõesCriacionais.FactoryMethod;
 using System.Collections.Generic;
 using Xunit;
 
-namespace PadrõesDeProjetoTestesUnitários.PadrõesCriacionais
+namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
 {
     public class FactoryMethodTeste
     {

@@ -1,4 +1,4 @@
-﻿namespace PadrõesDeProjeto.PadrõesCriacionais.FactoryMethod
+﻿namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 {
     public abstract class Ingrediente { };
 

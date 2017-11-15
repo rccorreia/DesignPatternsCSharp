@@ -14,8 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PadrõesDeProjeto\PadrõesDeProjeto.csproj" />
-    <ProjectReference Include="..\PadrõesDeProjeto\PadrõesDeProjeto.csproj" />
+    <ProjectReference Include="..\DesignPatternsCSharp\DesignPatternsCSharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
