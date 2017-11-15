@@ -4,7 +4,7 @@ using Xunit;
 
 namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
 {
-    public class AbstractFactoryTeste
+    public class AbstractFactoryTest
     {
         [Fact]
         public void ShouldCreateASpaghettiMealWhenCreateMealFromAdultCuisineFactoryIsCalled()
