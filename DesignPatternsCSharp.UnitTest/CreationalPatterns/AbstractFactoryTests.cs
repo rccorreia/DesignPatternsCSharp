@@ -1,12 +1,13 @@
 ﻿using DesignPatternsCSharp.CreationalPatterns.AbstractFactory;
 using FluentAssertions;
-using Xunit;
+using NUnit.Framework;
 
 namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
 {
-    public class AbstractFactoryTest
+    [TestFixture]
+    public class AbstractFactoryTests
     {
-        [Fact]
+        [Test]
         public void ShouldCreateASpaghettiMealWhenCreateMealFromAdultCuisineFactoryIsCalled()
         {
             var spaghettiMeal = new Spaghetti();
@@ -15,7 +16,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             adultCuisine.CreateMeal().Should().BeOfType(spaghettiMeal.GetType());
         }
 
-        [Fact]
+        [Test]
         public void ShouldCreateABrazilianDutchPieDessertWhenCreateDessertFromAdultCuisineFactoryIsCalled()
         {
             var brazilianDutchPieDessert = new BrazilianDutchPie();
@@ -24,7 +25,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             adultCuisine.CreateDessert().Should().BeOfType(brazilianDutchPieDessert.GetType());
         }
 
-        [Fact]
+        [Test]
         public void ShouldCreateARiceWithBroccoliMealWhenCreateMealFromKidCuisineFactoryIsCalled()
         {
             var riceWithBroccoliMeal = new RiceWithBroccoli();
@@ -33,7 +34,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             kidCuisine.CreateMeal().Should().BeOfType(riceWithBroccoliMeal.GetType());
         }
 
-        [Fact]
+        [Test]
         public void ShouldCreateAChocolateCakeDessertWhenCreateDessertFromKidCuisineFactoryIsCalled()
         {
             var chocolateCakeDessert = new ChocolateCake();

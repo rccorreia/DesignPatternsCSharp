@@ -1,4 +1,4 @@
-﻿namespace PadrõesDeProjeto.PadrõesEstruturais.Adapter.LegacyAPI
+﻿namespace DesignPatternsCSharp.StructuralPatterns.Adapter.LegacyAPI
 {
     public class MeatDatabase
     {

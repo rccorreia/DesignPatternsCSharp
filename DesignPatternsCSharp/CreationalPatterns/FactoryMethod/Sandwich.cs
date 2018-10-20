@@ -4,8 +4,6 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 {
     public abstract class Sandwich
     {
-        private List<Ingredient> _ingredients = new List<Ingredient>();
-
         public Sandwich()
         {
             CreateIngredients();
@@ -13,10 +11,7 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 
         public abstract void CreateIngredients();
 
-        public List<Ingredient> Ingredients
-        {
-            get { return _ingredients; }
-        }
+        public List<Ingredient> Ingredients { get; } = new List<Ingredient>();
     }
 
     public class HotDog : Sandwich

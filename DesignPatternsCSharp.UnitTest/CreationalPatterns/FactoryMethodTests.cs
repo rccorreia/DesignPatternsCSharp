@@ -1,13 +1,14 @@
 using DesignPatternsCSharp.CreationalPatterns.FactoryMethod;
 using FluentAssertions;
+using NUnit.Framework;
 using System.Collections.Generic;
-using Xunit;
 
 namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
 {
-    public class FactoryMethodTest
+    [TestFixture]
+    public class FactoryMethodTests
     {
-        [Fact]
+        [Test]
         public void ShouldCreateHotDogIngredientsWhenHotDogIsInstantiated()
         {
             var hotDogIngredients = new List<Ingredient>()
@@ -19,10 +20,10 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             };
             var hotDog = new HotDog();
 
-            hotDog.Ingredients.ShouldBeEquivalentTo(hotDogIngredients);
+            hotDog.Ingredients.Should().ContainInOrder(hotDogIngredients);
         }
 
-        [Fact]
+        [Test]
         public void ShouldCreateBrazilianBauruIngredientsWhenBrazilianBauruIsInstantiated()
         {
             var brazilianBauruIngredients = new List<Ingredient>()
@@ -35,7 +36,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             };
             var brazilianBauru = new BrazilianBauru();
 
-            brazilianBauru.Ingredients.ShouldBeEquivalentTo(brazilianBauruIngredients);
+            brazilianBauru.Ingredients.Should().ContainInOrder(brazilianBauruIngredients);
         }
     }
 }
