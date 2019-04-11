@@ -22,7 +22,5 @@ namespace DesignPatternsCSharp.UnitTest.StructuralPatterns
             order.Entree.Count().Should().Be(0, "No Entree requested.");
             order.Drink.Count().Should().Be(0, "No Drink requested.");
         }
-
-        //ToDo Criar todas as outras opções
     }
 }
