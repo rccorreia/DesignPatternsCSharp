@@ -16,10 +16,14 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
         protected abstract void CreateIngredients();
         protected abstract void DefineSandwichName();
 
-        public string Cook() => $"The {name} sandwich is ready";
+        public string Cook(int seconds) 
+            => $"Wait a minute, we are cooking your {name}.\n" 
+            + Ingredients.Select(x => x.Cook(seconds)).Aggregate((i, j) => i + "\n" + j)
+            + "\nYour Sandwich is ready.";
+        
         public string IngredientsList() => Ingredients.Select(x => x.IngredientName()).Aggregate((i, j) => i + " " + j);
         public decimal CaloriesCount() => Ingredients.Sum(x => x.Calories);
-        
+
         public List<Ingredient> Ingredients { get; } = new List<Ingredient>();
     }
 
