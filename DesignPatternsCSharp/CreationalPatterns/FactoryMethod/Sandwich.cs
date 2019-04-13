@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 {
     public abstract class Sandwich
     {
-        protected string Name;
+        protected string name;
 
         public Sandwich()
         {
@@ -15,12 +16,11 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
         protected abstract void CreateIngredients();
         protected abstract void DefineSandwichName();
 
-        public string Cook()
-        {
-            return $"The {Name} sandwich is ready";
-        }
-
-        public List<IIngredient> Ingredients { get; } = new List<IIngredient>();
+        public string Cook() => $"The {name} sandwich is ready";
+        public string IngredientsList() => Ingredients.Select(x => x.IngredientName()).Aggregate((i, j) => i + " " + j);
+        public decimal CaloriesCount() => Ingredients.Sum(x => x.Calories);
+        
+        public List<Ingredient> Ingredients { get; } = new List<Ingredient>();
     }
 
     public class HotDog : Sandwich
@@ -35,7 +35,7 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 
         protected override void DefineSandwichName()
         {
-            Name = "HotDog";
+            name = "HotDog";
         }
     }
 
@@ -52,7 +52,7 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 
         protected override void DefineSandwichName()
         {
-            Name = "BrazilianBauru";
+            name = "BrazilianBauru";
         }
     }
 }

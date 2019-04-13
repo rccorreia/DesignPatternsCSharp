@@ -11,7 +11,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
         [Test]
         public void ShouldCreateHotDogIngredientsWhenHotDogIsInstantiated()
         {
-            var hotDogIngredients = new List<IIngredient>()
+            var hotDogIngredients = new List<Ingredient>()
             {
                 new Bread(),
                 new Sausage(),
@@ -29,7 +29,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
         [Test]
         public void ShouldCreateBrazilianBauruIngredientsWhenBrazilianBauruIsInstantiated()
         {
-            var brazilianBauruIngredients = new List<IIngredient>()
+            var brazilianBauruIngredients = new List<Ingredient>()
             {
                 new Bread(),
                 new Cheese(),
@@ -60,6 +60,42 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             var brazilianBauru = new BrazilianBauru();
 
             brazilianBauru.Cook().Should().Be("The BrazilianBauru sandwich is ready");
+        }
+
+        [Test]
+        public void ShouldDisplayTheIngredientListOfHotDogSandwich()
+        {
+            const string HotDogIngredientList = "Bread Sausage PotatoSticks Bread";
+            var hotDog = new HotDog();
+
+            hotDog.IngredientsList().Should().Be(HotDogIngredientList);
+        }
+
+        [Test]
+        public void ShouldDisplayTheIngredientListOfBrazilianBauruSandwich()
+        {
+            const string BrazilianBauruIngredientList = "Bread Cheese Ham Tomato Bread";
+            var brazilianBauru = new BrazilianBauru();
+
+            brazilianBauru.IngredientsList().Should().Be(BrazilianBauruIngredientList);
+        }
+
+        [Test]
+        public void ShouldCountTheCaloriesOfAHotDogSandwich()
+        {
+            const decimal HotDogCaloriesCount = 937.55M;
+            var hotDog = new HotDog();
+
+            hotDog.CaloriesCount().Should().Be(HotDogCaloriesCount);
+        }
+
+        [Test]
+        public void ShouldCountTheCaloriesOfABrazilianBauruSandwich()
+        {
+            const decimal BrazilianBauruCaloriesCount = 799.26M;
+            var brazilianBauru = new BrazilianBauru();
+
+            brazilianBauru.CaloriesCount().Should().Be(BrazilianBauruCaloriesCount);
         }
     }
 }
