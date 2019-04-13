@@ -45,5 +45,21 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
             brazilianBauru.Ingredients[3].Should().BeOfType(brazilianBauruIngredients[3].GetType());
             brazilianBauru.Ingredients[4].Should().BeOfType(brazilianBauruIngredients[4].GetType());
         }
+
+        [Test]
+        public void ShouldDisplayTheReadyMessageWithHotDogNameWhenTheCookMethodIsCalled()
+        {
+            var hotDog = new HotDog();
+
+            hotDog.Cook().Should().Be("The HotDog sandwich is ready");
+        }
+
+        [Test]
+        public void ShouldDisplayTheReadyMessageWithTheBrazilianBauruNameWhenTheCookMethodIsCalled()
+        {
+            var brazilianBauru = new BrazilianBauru();
+
+            brazilianBauru.Cook().Should().Be("The BrazilianBauru sandwich is ready");
+        }
     }
 }
