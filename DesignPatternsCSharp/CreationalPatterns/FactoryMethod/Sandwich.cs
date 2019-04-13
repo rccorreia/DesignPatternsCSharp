@@ -11,7 +11,7 @@ namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 
         public abstract void CreateIngredients();
 
-        public List<Ingredient> Ingredients { get; } = new List<Ingredient>();
+        public List<IIngredient> Ingredients { get; } = new List<IIngredient>();
     }
 
     public class HotDog : Sandwich

@@ -11,7 +11,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
         [Test]
         public void ShouldCreateHotDogIngredientsWhenHotDogIsInstantiated()
         {
-            var hotDogIngredients = new List<Ingredient>()
+            var hotDogIngredients = new List<IIngredient>()
             {
                 new Bread(),
                 new Sausage(),
@@ -29,7 +29,7 @@ namespace DesignPatternsCSharp.UnitTest.CreationalPatterns
         [Test]
         public void ShouldCreateBrazilianBauruIngredientsWhenBrazilianBauruIsInstantiated()
         {
-            var brazilianBauruIngredients = new List<Ingredient>()
+            var brazilianBauruIngredients = new List<IIngredient>()
             {
                 new Bread(),
                 new Cheese(),

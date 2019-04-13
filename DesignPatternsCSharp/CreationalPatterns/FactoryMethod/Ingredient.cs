@@ -1,16 +1,16 @@
 ﻿namespace DesignPatternsCSharp.CreationalPatterns.FactoryMethod
 {
-    public abstract class Ingredient { };
+    public interface IIngredient { };
 
-    public class Bread : Ingredient { };
+    public class Bread : IIngredient { };
 
-    public class Sausage : Ingredient { };
+    public class Sausage : IIngredient { };
 
-    public class PotatoSticks : Ingredient { };
+    public class PotatoSticks : IIngredient { };
 
-    public class Cheese : Ingredient { };
+    public class Cheese : IIngredient { };
 
-    public class Ham : Ingredient { };
+    public class Ham : IIngredient { };
 
-    public class Tomato : Ingredient { };
+    public class Tomato : IIngredient { };
 }
