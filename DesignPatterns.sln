@@ -12,6 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PatternsDocumentation", "PatternsDocumentation", "{E794FD7C-7C00-4F3F-A000-AC9C1BAA9FB0}"
+	ProjectSection(SolutionItems) = preProject
+		PatternsDocumentation\summary.md = PatternsDocumentation\summary.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +34,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E794FD7C-7C00-4F3F-A000-AC9C1BAA9FB0} = {C05D834B-6955-4528-A2DF-50B460DA881A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0840D666-1B05-4A9D-8A26-38CB8C8DFFF0}
